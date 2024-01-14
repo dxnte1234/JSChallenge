@@ -1,0 +1,216 @@
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(238, 238, 238);
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 85%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aside_left,
+  .asideright,
+  .main {
+    height: 100%;
+    padding: 0.5em;
+  }
+
+  .aside_left,
+  .asideright {
+    display: none;
+  }
+
+  .main {
+    flex: 1;
+    // outline: red solid;
+    height: 100%;
+  }
+
+@media screen and (min-width:980px) {
+    .content {
+    display: flex;
+    flex-direction: row;
+    }
+    .aside_left {
+        // outline: blue solid;
+        height: 100%;
+        flex: 1;
+        display: block;
+    }
+
+    .main {
+        flex: 4;
+        // outline: red solid;
+        height: 100%;
+    }
+
+    .asideright {
+        // outline: green solid;
+        height: 100%;
+        flex: 2;
+        display: block;
+    }
+
+}
+$btn-primary: #3b49df;
+
+.btnPurple{
+    background-color: #3b49df;
+    color: white;
+    .btnPurple:hover{
+        color: black;
+    }
+}
+
+.btnOutPurple{
+    border-color: #3b49df;
+    color: #3b49df;
+    .btnOutPurple:hover{
+        background-color: #3b49df;
+        color: white;
+    }
+}
+
+.aside_left {
+    margin-top: 8px;
+}
+.labelbox1{
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.labeltitle{
+    color: #242424;
+    font-size: 20px;
+}
+
+.labeltext{
+    margin-bottom: 16px;
+    color: #575757;
+    font-size: 16px;
+}
+
+.loginbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.createbutton{
+    padding: 7px 15px;
+    margin-bottom: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #3b49df;
+    font-size: 16px;
+    background-color: white;
+    border: #3b49df 1px solid;
+    border-radius: 4px;
+}
+
+.createbutton:hover{
+    background-color: #3b49df;
+    color: white;
+    text-decoration: underline;
+}
+
+.loginbutton{
+    padding: 8px 16px;
+    color: #404040;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+}
+
+.loginbutton:hover{
+    background-color: rgb(237, 230, 250);
+    border-radius: 4px;
+    color: #3b49df;
+    text-decoration: underline;
+}
+
+.labelbox2{
+    display: flex;
+    flex-direction: column;
+}
+
+.listbox{
+    list-style: none;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .icon{
+        text-decoration: none;
+        color: #404040;
+        font-size: 16px;
+        text-align: left;
+    } 
+}
+
+.listbox:hover{
+    background-color: rgb(237, 230, 250);
+    .icon:hover{
+        color: #3b49df;
+        text-decoration: underline;
+    }
+}
+
+.socialm{
+    display: flex;
+    flex-direction: row;
+    .social_icon{
+        width: 32px;
+        margin: 2px, 4px;
+    }
+}
+
+.social_icon:hover{
+    background-color: rgb(237, 230, 250);
+    border-radius: 4px;
+}
+
+.tag{
+    text-decoration: none;
+    color: #404040;
+    font-size: 16px;
+}
+
+.tag:hover{
+    background-color: rgb(237, 230, 250);
+    border-radius: 4px;
+    color: #3b49df;
+    text-decoration: underline;
+}
+
+.login_logo{
+    width: auto;
+    height: 48px;
+    justify-content: center;
+}
+
+.centerForm{
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@import "navbar";
+@import "asideleft";
+@import "contentSection";
+@import "asideright";
+@import "footer"  

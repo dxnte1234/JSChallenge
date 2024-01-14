@@ -1,0 +1,749 @@
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(238, 238, 238);
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 85%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aside_left,
+.asideright,
+.main {
+  height: 100%;
+  padding: 0.5em;
+}
+
+.aside_left,
+.asideright {
+  display: none;
+}
+
+.main {
+  flex: 1;
+  height: 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .aside_left {
+    height: 100%;
+    flex: 1;
+    display: block;
+  }
+  .main {
+    flex: 4;
+    height: 100%;
+  }
+  .asideright {
+    height: 100%;
+    flex: 2;
+    display: block;
+  }
+}
+.btnPurple {
+  background-color: #3b49df;
+  color: white;
+}
+.btnPurple .btnPurple:hover {
+  color: black;
+}
+
+.btnOutPurple {
+  border-color: #3b49df;
+  color: #3b49df;
+}
+.btnOutPurple .btnOutPurple:hover {
+  background-color: #3b49df;
+  color: white;
+}
+
+.aside_left {
+  margin-top: 8px;
+}
+
+.labelbox1 {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.labeltitle {
+  color: #242424;
+  font-size: 20px;
+}
+
+.labeltext {
+  margin-bottom: 16px;
+  color: #575757;
+  font-size: 16px;
+}
+
+.loginbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.createbutton {
+  padding: 7px 15px;
+  margin-bottom: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #3b49df;
+  font-size: 16px;
+  background-color: white;
+  border: #3b49df 1px solid;
+  border-radius: 4px;
+}
+
+.createbutton:hover {
+  background-color: #3b49df;
+  color: white;
+  text-decoration: underline;
+}
+
+.loginbutton {
+  padding: 8px 16px;
+  color: #404040;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.loginbutton:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.labelbox2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.listbox {
+  list-style: none;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.listbox .icon {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  text-align: left;
+}
+
+.listbox:hover {
+  background-color: rgb(237, 230, 250);
+}
+.listbox:hover .icon:hover {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.socialm {
+  display: flex;
+  flex-direction: row;
+}
+.socialm .social_icon {
+  width: 32px;
+  margin: 2px, 4px;
+}
+
+.social_icon:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+}
+
+.tag {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+}
+
+.tag:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.login_logo {
+  width: auto;
+  height: 48px;
+  justify-content: center;
+}
+
+.centerForm {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbox {
+  height: 56px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  height: 40px;
+  margin: 3px 7px;
+}
+
+.buttonbox {
+  margin: 0 15px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button1 {
+  text-decoration: none;
+  font-family: "Open Sans";
+  color: #404040;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-right: 3px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.button1:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 6px;
+}
+
+.button2 {
+  padding: 7px 15px;
+  margin-right: 8px;
+  background-color: white;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(72, 0, 205);
+  border-color: rgb(72, 0, 205);
+  border-radius: 6px;
+}
+
+.button2:hover {
+  background-color: rgb(72, 0, 205);
+  color: white;
+  text-decoration: underline;
+}
+
+.btnPurple {
+  background-color: #3b49df;
+  color: white;
+}
+.btnPurple .btnPurple:hover {
+  color: black;
+}
+
+.btnOutPurple {
+  border-color: #3b49df;
+  color: #3b49df;
+}
+.btnOutPurple .btnOutPurple:hover {
+  background-color: #3b49df;
+  color: white;
+}
+
+.aside_left {
+  margin-top: 8px;
+}
+
+.labelbox1 {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.labeltitle {
+  color: #242424;
+  font-size: 20px;
+}
+
+.labeltext {
+  margin-bottom: 16px;
+  color: #575757;
+  font-size: 16px;
+}
+
+.loginbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.createbutton {
+  padding: 7px 15px;
+  margin-bottom: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #3b49df;
+  font-size: 16px;
+  background-color: white;
+  border: #3b49df 1px solid;
+  border-radius: 4px;
+}
+
+.createbutton:hover {
+  background-color: #3b49df;
+  color: white;
+  text-decoration: underline;
+}
+
+.loginbutton {
+  padding: 8px 16px;
+  color: #404040;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.loginbutton:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.labelbox2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.listbox {
+  list-style: none;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.listbox .icon {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  text-align: left;
+}
+
+.listbox:hover {
+  background-color: rgb(237, 230, 250);
+}
+.listbox:hover .icon:hover {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.socialm {
+  display: flex;
+  flex-direction: row;
+}
+.socialm .social_icon {
+  width: 32px;
+  margin: 2px, 4px;
+}
+
+.social_icon:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+}
+
+.tag {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+}
+
+.tag:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.login_logo {
+  width: auto;
+  height: 48px;
+  justify-content: center;
+}
+
+.centerForm {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxserch {
+  display: flex;
+  flex-grow: 5;
+  padding-left: 10%;
+  position: relative;
+  border-radius: 50;
+}
+
+.boxserchsoon {
+  border-radius: 10;
+  width: 300px;
+  display: flex;
+}
+
+.aside_left {
+  margin-top: 8px;
+}
+
+.labelbox1 {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.labeltitle {
+  color: #242424;
+  font-size: 20px;
+}
+
+.labeltext {
+  margin-bottom: 16px;
+  color: #575757;
+  font-size: 16px;
+}
+
+.loginbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.createbutton {
+  padding: 7px 15px;
+  margin-bottom: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #3b49df;
+  font-size: 16px;
+  background-color: white;
+  border: #3b49df 1px solid;
+  border-radius: 4px;
+}
+
+.createbutton:hover {
+  background-color: #3b49df;
+  color: white;
+  text-decoration: underline;
+}
+
+.loginbutton {
+  padding: 8px 16px;
+  color: #404040;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.loginbutton:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.labelbox2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.listbox {
+  list-style: none;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.listbox .icon {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+  text-align: left;
+}
+
+.listbox:hover {
+  background-color: rgb(237, 230, 250);
+}
+.listbox:hover .icon:hover {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.socialm {
+  display: flex;
+  flex-direction: row;
+}
+.socialm .social_icon {
+  width: 24px;
+  padding: 8px;
+}
+
+.social_icon:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+}
+
+.tag {
+  text-decoration: none;
+  color: #404040;
+  font-size: 16px;
+}
+
+.tag:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 4px;
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.main {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav_main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.nav_main div a {
+  padding: 5px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  color: #404040;
+}
+.nav_main div a:hover {
+  background-color: rgb(237, 230, 250);
+  border-radius: 6px;
+  color: rgb(60, 60, 220);
+}
+
+.mainbox {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mainbox .mainpicture_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.mainbox .mainpicture_box .mainpicture {
+  background-color: black;
+  max-width: 80%;
+  justify-content: center;
+}
+.mainbox .avatar {
+  display: flex;
+  align-items: center;
+}
+.mainbox .avatar .avatar_image {
+  padding: 10px;
+  margin-left: 1em;
+  max-height: 60px;
+  border-radius: 100%;
+}
+.mainbox .avatar .avatar_info ul {
+  padding-left: 10px;
+}
+.mainbox .avatar .avatar_info li {
+  font-family: "Open Sans";
+  color: black;
+  list-style-type: none;
+}
+.mainbox .h2_title {
+  margin: 0;
+  font-family: "Open Sans";
+  padding-left: 100px;
+  padding-right: 15px;
+}
+.mainbox .h2_title:hover {
+  color: rgb(60, 60, 220);
+}
+.mainbox .pills {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+.mainbox .pills li {
+  font-family: "Open Sans";
+  color: #404040;
+  padding: 10px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.mainbox .pills li:hover {
+  background-color: rgb(237, 230, 250);
+  font-style: italic;
+}
+
+.asideright {
+  margin-top: 8px;
+}
+
+.labelbox4 {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.labeltitle-r {
+  padding: 10px 16px;
+  color: #242424;
+  text-decoration: none;
+  border: #eeeeee 1px solid;
+}
+.labeltitle-r .tag-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.containertitle {
+  padding: 10px 16px;
+  border: #eeeeee 1px solid;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #404040;
+}
+
+.aright-text {
+  font-size: 13px;
+  color: #717171;
+  margin: 0;
+  padding-top: 3px;
+}
+
+.labeltitle-r:hover,
+.containertitle:hover {
+  color: #3b49df;
+}
+
+.trendtitle {
+  margin: 0;
+  padding: 8px 4px;
+}
+
+.trendbox {
+  color: #404040;
+  text-decoration: none;
+}
+
+.trendtext {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 16px;
+}
+
+.trendbox:hover,
+.trendtext:hover {
+  background-color: white;
+  color: #3b49df;
+}
+
+.cajaGris1 {
+  border: solid #ada8a8;
+  background-color: #b9b7b7;
+  padding-bottom: 0cm;
+}
+
+.cajaGris {
+  border: 1px solid #ada8a8;
+  background-color: #b9b7b7;
+  width: flex;
+  height: flex;
+}
+
+.fontFooter {
+  text-align: center;
+  text-decoration-style: none;
+}
+
+.navBottom {
+  display: flex;
+  justify-content: center;
+  list-style-type: circle;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  text-decoration-style: solid;
+}
+.navBottom li {
+  font-family: "Open Sans";
+  color: #7d7d7d;
+  padding: 10px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.tag2 {
+  text-decoration: none;
+  color: blue;
+  font-size: 10px;
+}
+
+p {
+  font-size: 10px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,69 @@
+.asideright{
+    margin-top: 8px;
+}
+
+.labelbox4{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.labeltitle-r{
+    padding: 10px 16px;
+    color: #242424;
+    text-decoration: none;
+    border: #eeeeee 1px solid;
+    .tag-title{
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+
+.containertitle{
+    padding: 10px 16px;
+    border: #eeeeee 1px solid;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    color: #404040;
+}
+
+.aright-text{
+    font-size: 13px;
+    color: #717171;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.labeltitle-r:hover,
+.containertitle:hover{
+    color: #3b49df;
+}
+
+
+.trendtitle{
+    margin: 0;
+    padding: 8px 4px;
+}
+
+.trendbox{
+   color: #404040;
+   text-decoration: none;
+}
+
+.trendtext{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 16px;
+}
+
+.trendbox:hover,
+.trendtext:hover{
+    background-color: white;
+    color: #3b49df;
+}
